@@ -14,7 +14,7 @@ class KeyLocation(IntEnum):
 
 
 class KeyboardEvent(UIEvent):
-    __interface_for__ = {'keydown', 'keyup'}
+    __interface_for__ = {'keydown', 'keyup', 'keypress'}
 
     @property
     def alt_key(self) -> bool:

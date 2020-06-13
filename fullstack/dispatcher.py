@@ -264,10 +264,10 @@ window.socket.onmessage = function (event) {
                 window.elements[component_id].innerHTML = data.inner_html;
                 break;
             case 'get_inner_html':
-                result = window.elements[component_id].innerHTML;
+                result = {inner_html: window.elements[component_id].innerHTML};
                 break;
             case 'get_value':
-                result = window.elements[component_id].value;
+                result = {value: window.elements[component_id].value};
                 break;
             case 'set_value':
                 window.elements[component_id].value = data.value;

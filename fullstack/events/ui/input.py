@@ -5,6 +5,8 @@ __all__ = ['InputEvent']
 
 
 class InputEvent(UIEvent, DataTransferMixin):
+    __interface_for__ = {'input'}
+
     @property
     def data(self) -> str:
         return self.__data__['data']
